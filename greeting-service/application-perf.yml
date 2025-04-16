@@ -1,0 +1,16 @@
+sspring:
+  cloud:
+    config:
+      enabled: false
+  application:
+    name: greeting-service
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+greeting-service:
+  greeting: "Hola"
+  default-value: "Mundo"
